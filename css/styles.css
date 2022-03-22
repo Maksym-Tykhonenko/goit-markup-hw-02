@@ -1,0 +1,93 @@
+:root {
+  --primary-text-color: rgba(33, 33, 33, 1);
+  --title-text-color: rgba(117, 117, 117, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/*header*/
+.header-logo .logo-web {
+  color: var(--accent-color);
+}
+
+.header-logo .logo-studio {
+  color: var(--primary-text-color);
+}
+
+.header-item {
+  color: var(--primary-text-color);
+}
+.header-item:hover,
+.header-item:focus {
+  color: var(--accent-color);
+}
+
+.header-list .header-item.current {
+  color: var(--accent-color);
+}
+.contact-link {
+  color: var(--title-text-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+/*main hero*/
+.hero {
+  background: rgba(47, 48, 58, 1);
+}
+.hero-titel {
+  color: white;
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/*main content*/
+.non-title {
+  visibility: hidden;
+}
+.section-title {
+  color: var(--primary-text-color);
+}
+
+.list-text {
+  color: var(--title-text-color);
+}
+.team-section {
+  background: rgba(245, 244, 250, 1);
+}
+
+/*footer*/
+.footer-logo .logo-web {
+  color: var(--accent-color);
+}
+
+.footer-logo .logo-studio {
+  color: white;
+}
+.footer {
+  background: rgba(47, 48, 58, 1);
+}
+.footer-text {
+  color: #ffffff;
+}
+
+/*страничка портфолио*/
+.portfolio-item:hover,
+.portfolio-item:focus {
+  background: #2196f3;
+  color: #ffffff;
+}
