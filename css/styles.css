@@ -76,7 +76,7 @@ body {
   background: var(--second-bg-color);
   text-align: center;
 }
-.hero-titel {
+.hero .titel {
   color: var(--third-color);
   font-family: Roboto;
   font-size: 44px;
@@ -85,8 +85,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
 }
-.hero-button {
+.hero .button {
   background-color: var(--accent-color);
   color: var(--third-color);
   font-family: Roboto;
@@ -111,6 +112,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.03em;
   text-align: left;
+  text-transform: uppercase;
 }
 .ben-list-text {
   font-family: Roboto;
