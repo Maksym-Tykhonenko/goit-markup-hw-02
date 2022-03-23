@@ -1,13 +1,17 @@
 :root {
   --primary-text-color: rgba(33, 33, 33, 1);
-  --title-text-color: rgba(117, 117, 117, 1);
+  --text-color: rgba(117, 117, 117, 1);
+  --third-color: #ffffff;
   --accent-color: rgba(33, 150, 243, 1);
+  --main-bg-color: #ffffff;
+  --second-bg-color: rgba(47, 48, 58, 1);
+  --third-bg-color: rgba(245, 244, 250, 1);
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Raleway", sans-serif;
-  background-color: white;
+  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
 
@@ -16,6 +20,16 @@ body {
 }
 
 /*header*/
+.header-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-decoration: none;
+}
 .header-logo .logo-web {
   color: var(--accent-color);
 }
@@ -26,6 +40,13 @@ body {
 
 .header-item {
   color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 .header-item:hover,
 .header-item:focus {
@@ -36,7 +57,14 @@ body {
   color: var(--accent-color);
 }
 .contact-link {
-  color: var(--title-text-color);
+  color: var(--text-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -45,49 +73,121 @@ body {
 
 /*main hero*/
 .hero {
-  background: rgba(47, 48, 58, 1);
+  background: var(--second-bg-color);
+  text-align: center;
 }
 .hero-titel {
-  color: white;
+  color: var(--third-color);
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 .hero-button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
 }
 
-/*main content*/
+/*main benefits*/
 .non-title {
   visibility: hidden;
 }
+.ben-list-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.ben-list-text {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--text-color);
+}
+/*main*/
 .section-title {
   color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
-
-.list-text {
-  color: var(--title-text-color);
+/*main team*/
+.team-title {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.team-text {
+  color: var(--text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 .team-section {
-  background: rgba(245, 244, 250, 1);
+  background: var(--third-bg-color);
 }
 
 /*footer*/
+.footer {
+  background: var(--second-bg-color);
+}
+.footer-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-decoration: none;
+}
+
 .footer-logo .logo-web {
   color: var(--accent-color);
 }
 
 .footer-logo .logo-studio {
-  color: white;
+  color: var(--third-color);
 }
-.footer {
-  background: rgba(47, 48, 58, 1);
-}
+
 .footer-text {
-  color: #ffffff;
+  color: var(--third-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 /*страничка портфолио*/
-.portfolio-item:hover,
-.portfolio-item:focus {
-  background: #2196f3;
-  color: #ffffff;
+.portfolio .button-item:hover,
+.portfolio .button-item:focus {
+  background: var(--accent-color);
+  color: var(--third-color);
 }
