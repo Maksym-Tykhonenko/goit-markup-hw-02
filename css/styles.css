@@ -6,6 +6,7 @@
   --main-bg-color: #ffffff;
   --second-bg-color: rgba(47, 48, 58, 1);
   --third-bg-color: rgba(245, 244, 250, 1);
+  --primary-button-color: rgba(245, 244, 250, 1);
 }
 
 body {
@@ -187,9 +188,42 @@ body {
   text-align: left;
 }
 
-/*страничка портфолио*/
+/*portfolio page*/
 .portfolio .button-item:hover,
 .portfolio .button-item:focus {
   background: var(--accent-color);
   color: var(--third-color);
+}
+
+.portfolio .button-item {
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: var(--primary-button-color);
+}
+
+.portfolio .project-title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.portfolio .project-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--text-color);
 }
