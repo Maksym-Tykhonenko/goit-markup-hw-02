@@ -1,6 +1,7 @@
 :root {
   --primary-text-color: rgba(33, 33, 33, 1);
   --text-color: rgba(117, 117, 117, 1);
+  --footer-cont-color: rgba(255, 255, 255, 0.6);
   --third-color: #ffffff;
   --accent-color: rgba(33, 150, 243, 1);
   --main-bg-color: #ffffff;
@@ -10,8 +11,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
@@ -24,11 +25,9 @@ body {
 .header-logo {
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: left;
   text-decoration: none;
 }
 .header-logo .logo-web {
@@ -41,13 +40,11 @@ body {
 
 .header-item {
   color: var(--primary-text-color);
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-decoration: none;
 }
 .header-item:hover,
 .header-item:focus {
@@ -57,19 +54,13 @@ body {
 .header-list .header-item.current {
   color: var(--accent-color);
 }
-.contact-link {
+.page-header .contact-link {
   color: var(--text-color);
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
-}
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
+  text-decoration: none;
 }
 
 /*main hero*/
@@ -79,9 +70,7 @@ body {
 }
 .hero .titel {
   color: var(--third-color);
-  font-family: Roboto;
   font-size: 44px;
-  font-style: normal;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -91,9 +80,7 @@ body {
 .hero .button {
   background-color: var(--accent-color);
   color: var(--third-color);
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -106,9 +93,7 @@ body {
   visibility: hidden;
 }
 .ben-list-title {
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.03em;
@@ -116,7 +101,6 @@ body {
   text-transform: uppercase;
 }
 .ben-list-text {
-  font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -126,9 +110,7 @@ body {
 /*main*/
 .section-title {
   color: var(--primary-text-color);
-  font-family: Roboto;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -136,16 +118,13 @@ body {
 }
 /*main team*/
 .team-title {
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 .team-text {
   color: var(--text-color);
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -161,11 +140,9 @@ body {
 .footer-logo {
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: left;
   text-decoration: none;
 }
 
@@ -179,13 +156,24 @@ body {
 
 .footer-text {
   color: var(--third-color);
-  font-family: Roboto;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
+}
+
+.footer-contact .contact-link {
+  color: var(--footer-cont-color);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 /*portfolio page*/
@@ -196,34 +184,26 @@ body {
 }
 
 .portfolio .button-item {
+  background-color: var(--primary-button-color);
   cursor: pointer;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  background-color: var(--primary-button-color);
 }
 
 .portfolio .project-title {
-  font-family: Roboto;
   font-size: 18px;
-  font-style: normal;
-
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
 }
 
 .portfolio .project-text {
-  font-family: Roboto;
+  color: var(--text-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--text-color);
 }
